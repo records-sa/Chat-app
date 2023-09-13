@@ -15,8 +15,12 @@ const firebaseConfig = {
   messagingSenderId: "630314585611",
   appId: "1:630314585611:web:111c95ffd21c1afc47c10e",
   measurementId: "G-7YMWJYKM0V",
+  databaseURL:
+    "https://kkoal-chat-app-default-rtdb.asia-southeast1.firebasedatabase.app",
 };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
+
+export default firebase;
