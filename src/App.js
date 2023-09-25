@@ -5,7 +5,7 @@ import RegisterPage from "./components/RegisterPage/RegisterPage";
 import { useEffect } from "react";
 import firebase from "firebase";
 import { useDispatch, useSelector } from "react-redux";
-import { setUser } from "./redux/actions/user_action";
+import { setUser, clearUser } from "./redux/actions/user_action";
 
 function App() {
   let navigate = useNavigate();
@@ -23,6 +23,7 @@ function App() {
       // 로그인이 안 된 상태
       else {
         navigate("/login");
+        dispach(clearUser());
       }
     });
   }, [navigate]);
