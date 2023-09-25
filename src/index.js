@@ -10,6 +10,7 @@ import ReduxThunk from "redux-thunk";
 import Reducer from "./redux/reducers";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import { composeWithDevTools } from "redux-devtools-extension";
 
 const createStoreWithMiddleware = applyMiddleware(
   promiseMiddleware,
