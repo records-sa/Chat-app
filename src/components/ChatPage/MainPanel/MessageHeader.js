@@ -59,7 +59,13 @@ function MessageHeader() {
           </Col>
         </Row>
         <Row>
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              marginBottom: "1rem",
+            }}
+          >
             <Image src="" /> user name
           </div>
         </Row>
